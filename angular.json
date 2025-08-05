@@ -33,8 +33,7 @@
               "src/styles.scss",
               "node_modules/aos/dist/aos.css"
             ],
-            "scripts": [],
-            "baseHref": "/portfolio/"
+            "scripts": []
           },
           "configurations": {
             "production": {
