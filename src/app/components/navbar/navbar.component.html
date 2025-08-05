@@ -1,0 +1,21 @@
+<nav class="sticky top-0 z-50 bg-white bg-opacity-80 backdrop-blur-md shadow-md">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold text-gray-800">Saurabh.dev</a>
+    <div class="hidden md:flex space-x-6">
+      <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+      <a href="#experience" class="text-gray-600 hover:text-blue-600">Experience</a>
+      <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
+      <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+
+    </div>
+    <a href="assets/Saurabh_Resume.pdf" download="Saurabh_Frontend_Lead_Resume.pdf"
+       class="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+      Download Resume
+    </a>
+
+     <button (click)="themeService.toggleTheme()" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+        <svg *ngIf="themeService.isDarkMode()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-yellow-400"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg *ngIf="!themeService.isDarkMode()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-700"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+  </div>
+</nav>
